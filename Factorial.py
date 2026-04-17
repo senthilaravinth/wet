@@ -15,3 +15,4 @@ if __name__ == "__main__":
         f.write(f"Factorial of {num} is {final_val}")
     
     print(f"Logic completed. Result: {final_val}")
+    print("This is a factorial code")
