@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: logic-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: factorial-logic
+  template:
+    metadata:
+      labels:
+        app: factorial-logic
+    spec:
+      containers:
+      - name: python-container
+        image: logic-app:latest
+        imagePullPolicy: Never
